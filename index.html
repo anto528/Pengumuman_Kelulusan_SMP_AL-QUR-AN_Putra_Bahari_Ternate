@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengumuman Kelulusan - SMP Al-Qur'an Putra Bahari Ternate</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/logo-smp-al-quran.png" type="image/png">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <header>
+            <img src="assets/images/logo-smp-al-quran.png" alt="Logo SMP Al-Qur'an Putra Bahari" class="school-logo">
+            <h1>Pengumuman Kelulusan Siswa</h1>
+            <h2>SMP Al-Qur'an Putra Bahari Ternate</h2>
+            <h3>Tahun Pelajaran 2024/2025</h3>
+        </header>
+
+        <div id="countdown-section" class="countdown-section">
+    <p>Pengumuman akan tersedia dalam:</p>
+    <div id="countdown" class="countdown-timer">
+        <div id="days-container"><span id="days">00</span><br>Hari</div>
+        <div id="hours-container"><span id="hours">00</span><br>Jam</div>
+        <div id="minutes-container"><span id="minutes">00</span><br>Menit</div>
+        <div id="seconds-container"><span id="seconds">00</span><br>Detik</div>
+    </div>
+    <p id="access-limit-display" class="access-limit-info"></p> </div>
+
+
+        <div id="login-section" class="login-section hidden">
+            <p>Silakan masukkan NISN dan Password Anda untuk melihat hasil kelulusan.</p>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="nisn">NISN:</label>
+                    <input type="text" id="nisn" placeholder="Masukkan NISN Anda" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Masukkan Password Anda" required>
+                </div>
+                <button type="submit">Cari Data</button>
+            </form>
+            <p id="error-message" class="error-message"></p>
+        </div>
+
+        <div id="result-section" class="result-section hidden">
+            <h2>Data Kelulusan Anda</h2>
+            <div class="student-data">
+                <p><strong>NISN:</strong> <span id="display-nisn"></span></p>
+                <p><strong>Nomor Peserta:</strong> <span id="display-nomor-peserta"></span></p>
+                <p><strong>Nama Peserta:</strong> <span id="display-nama-peserta"></span></p>
+                <p><strong>Status Kelulusan:</strong> <span id="display-status-kelulusan" class="status-lulus"></span></p>
+            </div>
+            <div class="action-buttons">
+                <button id="print-button" class="print-button">Cetak Bukti Kelulusan (PDF)</button>
+                <button id="logout-button" class="logout-button">Logout</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024-2025 SMP Al-Qur'an Putra Bahari Ternate. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/students.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
