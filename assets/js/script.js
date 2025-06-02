@@ -6,7 +6,7 @@
 // WITA: GMT+0800, WIT: GMT+0900, WIB: GMT+0700
 // Untuk pengujian: Set ke waktu yang sudah lewat, tapi belum 1 jam dari sekarang
 const ANNOUNCEMENT_DATE = new Date("June 02, 2025 16:00:00 GMT+0900"); // Ganti dengan tanggal dan waktu aktual Anda
-const ACCESS_LIMIT_HOURS = 2; // Batas akses pengumuman dalam JAM setelah tanggal pengumuman
+const ACCESS_LIMIT_HOURS = 5; // Batas akses pengumuman dalam JAM setelah tanggal pengumuman
 const DEFAULT_PASSWORD = "smppb25"; // Password umum
 
 const countdownSection = document.getElementById('countdown-section');
